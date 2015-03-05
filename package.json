@@ -1,0 +1,37 @@
+{
+  "name": "nredis-lock",
+  "version": "0.0.1",
+  "description": "Simple node.js lock based on Redis",
+  "keywords": [
+    "redis",
+    "lock",
+    "locking",
+    "node"
+  ],
+  "author": "assixantunes@gmail.com",
+  "homepage": "https://github.com/assisantunes/nredis-lock",
+  "main": "index",
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": ">= v0.8.0"
+  },
+  "dependencies": {
+    "redis": "0.10.3",
+    "promise": "^6.1.0",
+    "inherit": "^2.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/assisantunes/nredis-lock.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/assisantunes/nredis-lock/issues"
+  }
+}
