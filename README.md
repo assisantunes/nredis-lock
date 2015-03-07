@@ -72,7 +72,7 @@ Assis Antunes &lt;assixantunes@gmail.com&gt;
 # License
 (The MIT License)
 
-Copyright (c) 2015 Assis Antunes (assixantunes@gmail)
+Copyright (c) 2015 Assis Antunes (assixantunes@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the 'Software'), to deal in
