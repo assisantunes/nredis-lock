@@ -1,6 +1,6 @@
 {
   "name": "nredis-lock",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple node.js lock based on Redis",
   "keywords": [
     "redis",
