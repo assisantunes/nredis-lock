@@ -1,6 +1,6 @@
 {
   "name": "nredis-lock",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple node.js lock based on Redis",
   "keywords": [
     "redis",
@@ -25,8 +25,6 @@
   "devDependencies": {
     "mocha": "^2.1.0",
     "should": "^5.0.1",
-
-
     "gulp": "^3.8.11",
     "gulp-bump": "^0.1.13",
     "gulp-directive-replace": "^0.1.4",
