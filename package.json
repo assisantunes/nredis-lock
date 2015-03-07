@@ -18,22 +18,17 @@
     "node": ">= v0.8.0"
   },
   "dependencies": {
-    "redis": "0.10.3",
+    "inherit": "^2.1.0",
     "promise": "^6.1.0",
-    "inherit": "^2.1.0"
+    "redis": "^0.12.1"
   },
   "devDependencies": {
-    "mocha": "^2.1.0",
-    "should": "^5.0.1",
     "gulp": "^3.8.11",
-    "gulp-bump": "^0.1.13",
-    "gulp-directive-replace": "^0.1.4",
+    "gulp-bump": "^0.2.2",
     "gulp-filter": "^2.0.2",
     "gulp-git": "^1.0.0",
-    "gulp-less": "^3.0.0",
-    "gulp-remove-code": "^1.0.1",
-    "gulp-replace": "^0.5.2",
-    "gulp-tag-version": "^1.2.1"
+    "gulp-tag-version": "^1.2.1",
+    "mocha": "^2.1.0"
   },
   "repository": {
     "type": "git",
