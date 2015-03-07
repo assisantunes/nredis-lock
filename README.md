@@ -1,7 +1,8 @@
-# nredis-lock [![Build Status](https://travis-ci.org/assisantunes/nredis-lock.png)](https://travis-ci.org/assisantunes/nredis-lock) [![npm version](https://badge.fury.io/js/nredis-lock.svg)](http://badge.fury.io/js/nredis-lock)
-  
-Simple node.js lock based on Redis
+# nredis-lock [![HackHands Live Coding Help](https://img.shields.io/badge/live%20coding%20help-online-brightgreen.svg)](https://hackhands.com/assisantunes) [![Build Status](https://travis-ci.org/assisantunes/nredis-lock.png)](https://travis-ci.org/assisantunes/nredis-lock) [![npm version](https://badge.fury.io/js/nredis-lock.svg)](http://badge.fury.io/js/nredis-lock) 
 
+
+Simple node.js lock based on Redis
+ 
 [![NPM](https://nodei.co/npm/nredis-lock.png)](https://nodei.co/npm/nredis-lock/)
 
 ## Features
