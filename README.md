@@ -65,6 +65,13 @@ Lock('lock-name', null, true).then(function(done){
 });
 ```
 
+## Release the lock any time
+
+```javascript
+var mylock = Lock('lock-name');
+mylock.release();
+```
+
 ## Tests
 
 Require: `redis-server` running
