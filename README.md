@@ -1,6 +1,13 @@
-# nredis-lock
+# nredis-lock [![Build Status](https://travis-ci.org/assisantunes/nredis-lock.png)](https://travis-ci.org/assisantunes/nredis-lock) [![npm version](https://badge.fury.io/js/nredis-lock.svg)](http://badge.fury.io/js/nredis-lock)
   
 Simple node.js lock based on Redis
+
+[![NPM](https://nodei.co/npm/nredis-lock.png)](https://nodei.co/npm/nredis-lock/)
+
+## Features
+
+- For better server compatibility this module doesn't use redis scripts
+- Uses redis `__keyspace:*__:key` events when waiting for the lock to be released (for performance reasons)
 
 ## Installation
 
@@ -72,7 +79,7 @@ Assis Antunes &lt;assixantunes@gmail.com&gt;
 # License
 (The MIT License)
 
-Copyright (c) 2015 Assis Antunes (assixantunes@gmail)
+Copyright (c) 2015 Assis Antunes (assixantunes@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the 'Software'), to deal in
