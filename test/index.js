@@ -7,10 +7,7 @@ var assert = require("assert")
 
 before(function(){
     redis = require('redis');
-    Lock = require("../lib/index.js")({
-        'pubClient': redis.createClient(),
-        'subClient': redis.createClient()
-    });
+    Lock = require("../lib/index.js")(redis.createClient());
 });
 
 
@@ -33,36 +30,6 @@ describe('Lock', function(){
             .then(null, function(){
                 assert(true);
                 done();
-            });
-    });
-
-    it('should wait until release the last lock', function(done){
-        this.timeout(3000);
-
-        // Lock using 1000 as timeout
-        Lock('test-2', 1000)
-            .acquire()
-            .then(function(){
-                assert(true);
-            }, function(){
-                assert(false, 'should acquire the lock');
-            });
-
-        // should be locked
-        Lock('test-2')
-            .acquire()
-            .then(function(){
-                assert(false, 'should not acquire the lock');
-            }, function(){
-                assert(true);
-            });
-
-        // Running after the first lock be released
-        Lock('test-2', null, true)
-            .acquire()
-            .then(function(release){
-                done();
-                release();
             });
     });
 

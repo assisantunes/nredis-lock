@@ -8,7 +8,6 @@ Simple node.js lock based on Redis
 ## Features
 
 - For better server compatibility this module doesn't use redis scripts
-- Uses redis `__keyspace:*__:key` events when waiting for the lock to be released (for performance reasons)
 
 ## Installation
 
@@ -19,17 +18,13 @@ Simple node.js lock based on Redis
 ```javascript
 var redis = require('redis');
 
-var Lock = require('nredis-lock')({
-		'pubClient': redis.createClient(),
-		'subClient': redis.createClient()
-	});
+var Lock = require('nredis-lock')(redis.createClient());
 ```
 
-### Lock(lockName, [timeout = 5000], [block = false])
+### Lock(lockName, [timeout = 5000])
 
 * ``lockName``: Any name for a lock
-* ``timeout``: (Optional) The maximum time (in ms) to hold the lock for. If this time is exceeded, the lock is automatically released. Default: 5000 ms (5 seconds).
-* ``block``: (Optional) If is `true` the lock will wait until the last lock be released. Default: `false`
+* ``timeout``: (Optional) The maximum time (in ms) to hold the lock for. If this time is exceeded, the lock is automatically released. Default: 10000 ms (10 seconds).
 
 
 ## Simple usage
@@ -59,16 +54,6 @@ Lock('lock-name', 3000)
 	.acquire()
 	.then(function(done){
 	}, function(){
-	});
-```
-
-## Waiting the last lock be released
-
-```javascript
-Lock('lock-name', null, true)
-	.acquire()
-	.then(function(done){
-		done();
 	});
 ```
 
